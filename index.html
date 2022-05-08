@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Survey Form</h1>
+            <p id="description">This is a form</p>
+        </header>
+        <form id="survey-form">
+
+            <div class="input-section">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" placeholder="Insert your Name">
+            </div>
+
+            <div class="input-section">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" placeholder="Insert your Email">
+            </div>
+
+            <div class="input-section">
+                <label for="number" id="number-label">Age</label>
+                <input type="number" id="number" placeholder="Insert your Age">
+            </div>
+
+            <div class="input-section">
+                <label for="dropdown" id="dropdown-label">Sex:</label>
+                <select id="dropdown">
+                    <option default value="none">I prefer not to say it</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+
+            <div class="radio-section">
+                <p>What is your current status?</p>
+                <label for="single">
+                    <input checked type="radio" id="single" value="single" name="status">Single</label>
+
+                <label for="divorced">
+                    <input type="radio" id="divorced" value="divorced" name="status">Divorced</label>
+
+                <label for="married">
+                    <input type="radio" id="married" value="married" name="status">Married</label>
+            </div>
+
+            <div class="radio-section">
+                <p>What is your current work status?</p>
+                <label for="employed">
+                    <input checked type="radio" id="employed" value="employed" name="work">Employed</label>
+
+                <label for="unemployed">
+                    <input type="radio" id="unemployed" value="unemployed" name="work">Unemployed</label>
+            </div>
+
+            <div class="checkbox-section">
+                <p>What is your current mobility status?</p>
+                <label for="moto">
+                    <input type="checkbox" id="moto" value="moto" name="vehicle">Moto</label>
+
+                <label for="car">
+                    <input type="checkbox" id="car" value="car" name="vehicle">Car</label>
+
+                <label for="truck">
+                    <input type="checkbox" id="truck" value="truck" name="vehicle">Truck</label>
+            </div>
+
+            <div class="tarea-section">
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments"></textarea>
+            </div>
+
+            <div class="button-section">
+                <button id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
